@@ -6,7 +6,9 @@ class Solution {
 
                 if(nums[right]!=0)
                 {
-                    nums[right]=nums[left]-nums[right]+(nums[left]=nums[right]);
+                    int temp=nums[left];
+                    nums[left]=nums[right];
+                    nums[right]=temp;
                     left++;
                 }
         }
