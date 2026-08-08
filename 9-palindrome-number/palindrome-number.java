@@ -8,11 +8,6 @@ class Solution {
             rev=rev*10 + (x%10);
             x/=10;
         }
-        if(rev==original){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return rev==original;
     }
 }
